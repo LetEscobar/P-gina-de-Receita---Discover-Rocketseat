@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Cores: */
+    --background-pagina: hsl(0, 0%, 92%);
+    --background-receita: hsl(0, 0%, 100%);
+    --titulos-subtitulos: hsl(0, 0%, 11%);
+    --color-footer-legenda: hsl(0, 0%, 56%);
+    --textos: hsl(240, 1%, 23%);
+
+    /* Textos: */
+    --titulo: 2.8rem;
+    --subtitulo: 2rem;
+    --listas-paragrafos: 1.6rem;
+    --footer-legenda: 1.2rem;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: var(--titulo);
+}
+
+h2 {
+    font-size: var(--subtitulo);
+    margin-bottom: 2rem;
+}
+
+h1,
+h2 {
+    text-transform: uppercase;
+    margin-top: 4rem;
+    color: var(--titulos-subtitulos);
+}
+
+li {
+    color: var(--textos);
+}
+
+li,
+.info {
+    font-size: var(--listas-paragrafos);
+}
+
+ul,
+ol {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding-inline: 2rem;
+}
+
+.legenda {
+    font-size: var(--footer-legenda);
+}
+
+.ingredientes,
+.preparo,
+.info {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background-pagina);
+}
+
+.content {
+    width: 65%;
+    background-color: var(--background-receita);
+    height: max-content;
+    padding: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 6rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-legenda {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.image {
+    height: 25rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 3rem;
+}
+
+footer p,
+.legenda {
+    font-size: var(--footer-legenda);
+    color: var(--color-footer-legenda);
+}
+
+/* 
+:root {
+    --background-pagina: hsl(0, 0%, 92%);
+    --background-receita: hsl(0, 0%, 100%);
+    --titulos-subtitulos: hsl(0, 0%, 11%);
+    --color-footer-legenda: hsl(0, 0%, 56%);
+    --outros-textos: hsl(240, 1%, 23%);
+
+    --titulo: 2.8rem;
+    --subtitulo: 2rem;
+    --listas-paragrafos: 1.6rem;
+    --footer-legenda: 1.2rem;
+}
+*/
